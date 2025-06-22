@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Cart</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="top-header d-flex align-items-center py-2">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-6 col-md-4">
+                        <a href=""><img loading="lazy" width="100" src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <input type="text" class="form-control d-block search-input " placeholder=" ابحث عن منتج ">
+                    </div>
+                    <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end">
+                        <a data-bs-toggle="offcanvas" href="#cart" role="button"
+                            aria-controls="offcanvasExample">
+                            <span>السلة </span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a  data-bs-toggle="offcanvas" href="#login" role="button"
+                            aria-controls="offcanvasExample">
+                            <span> الدخول </span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="" >
+                            <span>المفضلة </span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg nav-custom ">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse nav-custom1" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="huawei.html">هواوي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="samsung.html">سامسونج</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="apple.html">آيفون</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="xiaomi.html">شاومي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="oppo.html">أوبو</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="realme.html">ريلمي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vivo.html">فيفو</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nokia.html">نوكيا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Start Banner -->
+    <section class="cart-banner">
+      <h1 class="category-title"> سلة المشتريات</h1>
+    </section>
+    <!-- End Banner -->
+
+   
+<div class="container">
+    <div class="row">
+        <!-- Products Column -->
+        <div class="col-lg-8 col-md-7 mb-3">
+            <div class="row row-cols-1 row-mini-card">
+                <!-- Header Row - Hidden on mobile -->
+                <div class="col mini-card d-none d-md-flex justify-content-between align-items-center px-3 mt-3 mt-md-5">
+                    <p class="cart-product-title">المنتج</p>
+                    <p class="cart-product-title">السعر</p>
+                    <p class="cart-product-title">الكمية</p>
+                    <p class="cart-product-title">الإجمالي</p>
+                </div>
+
+                <!-- Product 1 -->
+                <div class="col mini-card product-card">
+                    <div class="row align-items-center py-3">
+                        <div class="col-12 col-md-5 d-flex flex-column flex-md-row gap-2 align-items-center mb-3 mb-md-0">
+                            <img class="img-fluid product-img"  width="60px" src="images/iphones/iphone16promax.png" alt="iPhone 16 Pro Max">
+                            <p class="product-name mb-0 text-center text-md-start">iPhone 16 Pro Max</p>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <p class="product-price mb-2 mb-md-0">230$</p>
+                        </div>
+                        <div class="col-4 col-md-3 text-center">
+                            <div class="btn-group btns-quantity-mini mx-auto">
+                                <button type="button" class="btn">-</button>
+                                <button type="button" class="btn">1</button>
+                                <button type="button" class="btn">+</button>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <p class="product-total mb-0">230$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col mini-card product-card">
+                    <div class="row align-items-center py-3">
+                        <div class="col-12 col-md-5 d-flex flex-column flex-md-row gap-2 align-items-center mb-3 mb-md-0">
+                            <img class="img-fluid product-img"  width="60px" src="images/iphones/iphone16.png" alt="iPhone 16">
+                            <p class="product-name mb-0 text-center text-md-start">iPhone 16</p>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <p class="product-price mb-2 mb-md-0">200$</p>
+                        </div>
+                        <div class="col-4 col-md-3 text-center">
+                            <div class="btn-group btns-quantity-mini mx-auto">
+                                <button type="button" class="btn">-</button>
+                                <button type="button" class="btn">1</button>
+                                <button type="button" class="btn">+</button>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <p class="product-total mb-0">200$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col mini-card product-card">
+                    <div class="row align-items-center py-3">
+                        <div class="col-12 col-md-5 d-flex flex-column flex-md-row gap-2 align-items-center mb-3 mb-md-0">
+                            <img class="img-fluid product-img" width="60px" src="images/iphones/iphone16plus.png" alt="iPhone 15 Pro">
+                            <p class="product-name mb-0 text-center text-md-start">iPhone 15 Pro</p>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <p class="product-price mb-2 mb-md-0">180$</p>
+                        </div>
+                        <div class="col-4 col-md-3 text-center">
+                            <div class="btn-group btns-quantity-mini mx-auto">
+                                <button type="button" class="btn">-</button>
+                                <button type="button" class="btn">1</button>
+                                <button type="button" class="btn">+</button>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2 text-center">
+                            <p class="product-total mb-0">180$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coupon Code Section -->
+            <div class="coupon-section mt-4">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="كود الخصم">
+                            <button class="btn btn-primary section-p">تطبيق الكوبون</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-lg-4 col-md-5">
+            <div class="summery mt-3 mt-md-5">
+                <h4 class="cart-product-title mb-3">ملخص سلة المشتريات</h4>
+                <div class="d-flex justify-content-between cart-item">
+                    <p>المجموع :</p>
+                    <p>610$</p>
+                </div>
+                <div class="d-flex justify-content-between cart-item">
+                    <p>قيمة الخصم:</p>
+                    <p>0$</p>
+                </div>
+                <div class="d-flex justify-content-between cart-item total-item">
+                    <p class="fw-bold">المجموع النهائي:</p>
+                    <p class="fw-bold">610$</p>
+                </div>
+                <hr>
+                <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+                    <button type="button" class="btn success">العودة للمتجر</button>
+                    <a href="checkout.html" class="btn danger text-white">الإنتقال للدفع</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+     <!-- start Login -->
+     <section class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title canvas-title" id="login"> تسجيل الدخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mini-login">
+                <form>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"> اسم المستخدم أو البريد </label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="passwordlass" class="form-label"> كلمة المرور </label>
+                      <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"> تذكر بياناتي </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary section-p w-100"> تسجيل الدخول</button>
+                  </form>
+            </div>
+              <div class="alert alert-danger my-3 text-center">
+                <a href="">
+                                   إنقر هنا في حال نسيت كلمة المرور
+                </a>
+                <hr>
+
+               <div class="text-center mt-2">
+                <i class="fa-regular fa-user fa-3x"></i>
+                <p> لا يوجد لديك حساب ؟؟ </p>
+                <a href="" class="btn btn-danger section-primary w-100"> إنشاء حساب جديد </a>
+               </div>
+              </div>
+        </div>
+    </section>
+    <!-- End Login -->
+
+ <!-- Start Footer -->
+<footer>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <!-- Column 1 - Brand Info -->
+        <div class="col f1">
+          <div class="footer-brand">
+            <img class="img-fluid" width="100" src="images/logo.png" alt="متجر إلكتروني">
+            <p class="text-white mb-2">
+              متجر إلكتروني متخصص في أحدث الأجهزة الذكية والإلكترونيات بجودة عالية وأسعار تنافسية
+            </p>
+            <ul class="footer-contact text-white list-unstyled">
+              <li class="mb-1"><i class="fas fa-map-marker-alt me-2"></i> السودان - كسلا </li>
+              <li class="mb-1"><i class="fas fa-phone-alt me-2"></i> +249 12 989 1773</li>
+              <li class="mb-1"><i class="fas fa-envelope me-2"></i> info@electronic-store.com</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Column 2 - Important Links -->
+        <div class="col f2">
+          <h3> أهم الروابط </h3>
+          <ul class="navbar-nav">
+            <li class="mb-2"><a href="#"> الرئيسية</a></li>
+            <li class="mb-2"><a href="#">من نحن</a></li>
+            <li class="mb-2"><a href="#">المنتجات</a></li>
+            <li class="mb-2"><a href="#">العروض</a></li>
+            <li class="mb-2"><a href="#">اتصل بنا</a></li>
+          </ul>
+        </div>
+  
+        <!-- Column 3 - Categories -->
+        <div class="col f3">
+          <h3> التصنيفات </h3>
+          <ul class="navbar-nav">
+            <li class="mb-2"><a href="#"> سماعات الأذن </a></li>
+            <li class="mb-2"><a href="#"> الساعات الذكية </a></li>
+            <li class="mb-2"><a href="#"> إكسسوارات </a></li>
+            <li class="mb-2"><a href="#"> هواتف ذكية </a></li>
+            <li class="mb-2"><a href="#"> لابتوبات </a></li>
+          </ul>
+        </div>
+  
+        <!-- Column 4 - Newsletter -->
+        <div class="col f4">
+          <h3> النشرة البريدية </h3>
+          <p>
+            اشترك في نشرتنا البريدية ليصلك كل جديد عن العروض والمنتجات
+          </p>
+          <form action="">
+            <input type="text" placeholder=" الرجاء ادخال البريد " class="form-control mb-1">
+            <button class="btn btn-primary w-100 section-primary"> اشتراك </button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Bottom Row - Payments, Social, Copyright -->
+      <div class="row mt-3 gy-3">
+        <!-- Payments Column -->
+        <div class="col-12 col-md-auto order-md-1">
+          <img src="images/payments.png" alt="payment methods" class="img-fluid">
+        </div>
+  
+        <!-- Social Links Column -->
+        <div class="col-12 col-md-auto order-md-3 order-lg-2">
+          <div class="social-links">
+            <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="text-white mx-2"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+  
+        <!-- Copyright Column -->
+        <div class="col-12 col-md-auto order-md-2 order-lg-3 text-md-end">
+          <p class="text-white mb-0">© 2025 المتجر الإلكتروني. جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
