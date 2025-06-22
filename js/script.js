@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 'auto',
-      spaceBetween: 20,
+      spaceBetween: 10,
       centeredSlides: false,
       grabCursor: true,
       
