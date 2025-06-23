@@ -467,11 +467,14 @@ h4 {
         width: 200px;
     }
     
-    .swiper-button-prev,
     .swiper-button-next {
-        display: none;
+        right: 5px;
+    }
+    .swiper-button-prev {
+        left: 5px;
     }
 }
+
 /* End new-products style */ 
 
 /* Start review style */
@@ -1113,7 +1116,7 @@ footer .navbar-nav li a:hover::after {
     bottom: 30px;
     left: 30px;
     background-color: #25d366;
-    color: #fff;
+    color: var(--white);
     border-radius: 50%;
     width: 60px;
     height: 60px;
